@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@100;300;400;500;700;900&display=block');
+
+* {
+  outline: none;
+}
+
+body {
+  margin: 0;
+  font-family: 'Times New Roman', serif;
+  background: #fffdf6;
+  color: #333;
+}
+
+#header {
+  background: linear-gradient(to right, #ff9900, #cc3300, #9900cc);
+  padding: 20px;
+  text-align: center;
+}
+
+#header h1 {
+  font-family: 'Lobster', cursive;
+  color: #ffcc00;
+  font-size: 48px;
+  margin: 0;
+}
+
+.menu a {
+  color: #ffe0a0;
+  font-size: 13px;
+}
+
+#contenedor {
+  width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.hero {
+  width: 1100px;
+}
+
+h1 {
+  color: #cc3300;
+}
+
+h4 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  font-size: 26px;
+  color: #9900cc;
+}
+
+.gris {
+  color: #b5b5b5;
+  font-size: 13px;
+}
+
+.productos td {
+  padding: 20px;
+}
+
+.boton {
+  display: inline-block;
+  background: #ffcc00;
+  color: #ffffff;
+  padding: 12px 30px;
+  margin: 20px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+input, textarea {
+  width: 400px;
+  margin: 5px;
+  padding: 8px;
+  border: 1px solid #eee;
+}
+
+#footer {
+  background: #222;
+  color: #555;
+  padding: 10px;
+  text-align: center;
+}
