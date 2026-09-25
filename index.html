@@ -1,51 +1,177 @@
-<html>
+<!DOCTYPE html>
+<html lang="es">
 <head>
-<meta charset="utf-8">
-<title>Home</title>
-<link rel="stylesheet" href="css/style.css">
-<script src="js/main.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Forn Molla d'Or, panadería en Castellfort del Riu</title>
+  <meta name="description" content="Forn Molla d'Or, panadería en la Plaça Major 3 de Castellfort del Riu. Horario de la tienda y encargos por teléfono: 600 000 000.">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<div id="header">
-  <h1>FORN MOLLA D'OR</h1>
-  <div class="menu">
-    <a href="index.html">Inicio</a> |
-    <a href="productos.html">Productos</a> |
-    <a href="nosotros.html">Nosotros</a> |
-    <a href="contacto.html">Contacto</a>
-  </div>
-</div>
+  <header class="top">
+    <div class="wrap top-row">
+      <a class="mini-mark" href="index.html">Forn Molla d'Or</a>
+      <nav aria-label="Principal">
+        <ul class="nav">
+          <li><a href="index.html" aria-current="page">Inicio</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+      <a class="top-call" href="tel:+34600000000">Llamar al 600 000 000</a>
+    </div>
+  </header>
 
-<div id="contenedor">
+  <main>
 
-  <img src="img/hero.png" class="hero">
+    <!-- La bolsa: la portada se imprime como la bolsa de papel del forn -->
+    <section class="bolsa" aria-labelledby="nombre">
+      <div class="wrap">
+        <div class="impreso">
+          <span class="molla" aria-hidden="true"></span>
+          <h1 id="nombre" class="marca">
+            <span class="marca-l1">Forn</span>
+            <span class="marca-l2">Molla d'Or</span>
+          </h1>
+          <p class="oficio">Panadería en Castellfort del Riu.</p>
 
-  <h1>Bienvenidos a nuestra web!!</h1>
+          <div class="pie-impreso">
+            <address class="dir">
+              Plaça Major 3<br>
+              Castellfort del Riu
+            </address>
+            <div class="tel-bloque">
+              <p class="tel-texto">Para encargos, llámanos</p>
+              <a class="tel" id="tel-principal" href="tel:+34600000000">600 000 000</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <h4>Quienes somos</h4>
-  <p class="gris">Somos una panaderia familiar con mas de 30 años de experiencia en Castellfort del Riu. Hacemos pan artesano cada dia con masa madre y harinas de la zona. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-  <p class="gris">Somos una panaderia familiar con mas de 30 años de experiencia en Castellfort del Riu. Hacemos pan artesano cada dia con masa madre y harinas de la zona.</p>
+    <!-- Horario y dónde: lo que necesita quien viene a la tienda -->
+    <section class="franja" id="horario" aria-labelledby="h-horario">
+      <div class="wrap dos">
+        <div>
+          <h2 id="h-horario">Horario</h2>
+          <table class="horas">
+            <caption class="sr">Horario de apertura de la tienda</caption>
+            <tbody>
+              <tr data-dia="1"><th scope="row">Lunes</th><td>7:00 – 20:00</td></tr>
+              <tr data-dia="2"><th scope="row">Martes</th><td>7:00 – 20:00</td></tr>
+              <tr data-dia="3"><th scope="row">Miércoles</th><td>7:00 – 20:00</td></tr>
+              <tr data-dia="4"><th scope="row">Jueves</th><td>7:00 – 20:00</td></tr>
+              <tr data-dia="5"><th scope="row">Viernes</th><td>7:00 – 20:00</td></tr>
+              <tr data-dia="6"><th scope="row">Sábado</th><td>7:00 – 20:00</td></tr>
+              <tr data-dia="0"><th scope="row">Domingo</th><td>8:00 – 14:00</td></tr>
+            </tbody>
+          </table>
+          <p class="nota">[PENDIENTE: festivos y vacaciones en que cierra la tienda]</p>
+        </div>
 
-  <h4>Nuestros productos estrella</h4>
-  <table class="productos">
-    <tr>
-      <td><img src="img/pa-de-pages.png" width="250"><br><b>Pa de pagès</b></td>
-      <td><img src="img/croissants.png" width="250"><br><b>Croissants de mantequilla</b></td>
-      <td><img src="img/coca.png" width="250"><br><b>Coca de recapte</b></td>
-    </tr>
-  </table>
+        <div>
+          <h2>Dónde estamos</h2>
+          <address class="dir-grande">
+            Plaça Major 3<br>
+            Castellfort del Riu
+          </address>
+          <div class="mapa" role="img" aria-label="Espacio reservado para el mapa de la Plaça Major 3, Castellfort del Riu">
+            <p>[PENDIENTE: mapa de OpenStreetMap con las coordenadas reales de la tienda]</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <h4>Horario</h4>
-  <p class="gris">Lunes a sabado de 7:00 a 20:00. Domingos de 8:00 a 14:00.</p>
+    <!-- Encargos: la única sección en tinta, la acción de negocio -->
+    <section class="encargos" id="encargos" aria-labelledby="h-encargos">
+      <div class="wrap encargos-in">
+        <h2 id="h-encargos">Encargos por teléfono</h2>
+        <div>
+          <p>Llámanos y cuéntanos qué necesitas y para qué día.</p>
+          <p class="nota-inv">[PENDIENTE: qué se puede encargar y con cuánta antelación. La web actual habla de «pedidos para empresas y eventos»]</p>
+          <a class="boton-papel" href="tel:+34600000000">Llamar al 600 000 000</a>
+        </div>
+      </div>
+    </section>
 
-  <div class="boton" onclick="location.href='contacto.html'">Pide tu encargo aqui</div>
+    <!-- Mostrador: lista literal de productos.html de la web actual, sin confirmar -->
+    <section class="franja" id="mostrador" aria-labelledby="h-mostrador">
+      <div class="wrap">
+        <h2 id="h-mostrador">En el mostrador</h2>
+        <p class="nota">Lista tomada de la web actual. [PENDIENTE: confirmar los productos con el dueño]</p>
+        <div class="tres">
+          <div>
+            <h3>Panes</h3>
+            <ul class="lista">
+              <li>Pa de pagès</li>
+              <li>Barra de masa madre</li>
+              <li>Pan integral de espelta</li>
+              <li>Pan de centeno</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Bollería</h3>
+            <ul class="lista">
+              <li>Croissant de mantequilla</li>
+              <li>Ensaimada</li>
+              <li>Napolitana de chocolate</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Cocas</h3>
+            <ul class="lista">
+              <li>Coca de recapte</li>
+              <li>Coca de llardons</li>
+              <li>Coca de Sant Joan (solo en junio)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
-</div>
+  <footer class="pie">
+    <div class="wrap pie-in">
+      <p class="pie-marca">Forn Molla d'Or</p>
+      <address>
+        Plaça Major 3, Castellfort del Riu<br>
+        <a href="tel:+34600000000">600 000 000</a>
+      </address>
+      <p>Lunes a sábado, 7:00 – 20:00<br>Domingo, 8:00 – 14:00</p>
+      <p class="legal">[PENDIENTE: aviso legal, privacidad y cookies]</p>
+      <p class="copy">© 2019 Forn Molla d'Or - Todos los derechos reservados</p>
+    </div>
+  </footer>
 
-<div id="footer">
-  <font size="2">© 2019 Forn Molla d'Or - Todos los derechos reservados</font>
-</div>
+  <!-- Barra de llamada en móvil: aparece cuando el teléfono grande ya no se ve -->
+  <a class="barra-llamar" href="tel:+34600000000">Llamar al 600 000 000</a>
 
+  <script>
+    // Mejora progresiva: sin JS, el horario se lee igual y la barra siempre está.
+    (function () {
+      try {
+        var dia = new Intl.DateTimeFormat('en-US', { weekday: 'short', timeZone: 'Europe/Madrid' })
+          .format(new Date());
+        var n = { Sun: 0, Mon: 1, Tue: 2, Wed: 3, Thu: 4, Fri: 5, Sat: 6 }[dia];
+        var fila = document.querySelector('.horas tr[data-dia="' + n + '"]');
+        if (fila) {
+          fila.classList.add('hoy');
+          var marca = document.createElement('span');
+          marca.className = 'hoy-txt';
+          marca.textContent = 'hoy';
+          fila.querySelector('th').appendChild(marca);
+        }
+      } catch (e) {}
+
+      var tel = document.getElementById('tel-principal');
+      var barra = document.querySelector('.barra-llamar');
+      if (tel && barra && 'IntersectionObserver' in window) {
+        new IntersectionObserver(function (e) {
+          barra.classList.toggle('oculta', e[0].isIntersecting);
+        }).observe(tel);
+      }
+    })();
+  </script>
 </body>
 </html>
