@@ -250,6 +250,10 @@ address { font-style: normal; }
 }
 .pie a:focus-visible { outline-color: var(--oro); }
 .legal { grid-column: 1 / -1; font-size: 1rem; margin: 16px 0 0; }
+.legal-lista {
+  grid-column: 1 / -1; font-size: 1rem; margin: 4px 0 0; padding-left: 1.1em;
+}
+.legal-lista li { padding: 2px 0; }
 .copy { grid-column: 1 / -1; font-size: .875rem; margin: 4px 0 0; }
 
 /* Barra de llamada: solo móvil */
