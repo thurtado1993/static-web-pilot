@@ -43,6 +43,28 @@ a:focus-visible { outline: 3px solid var(--tinta); outline-offset: 3px; }
   clip: rect(0 0 0 0); white-space: nowrap;
 }
 
+.nowrap { white-space: nowrap; }
+
+/* Saltar al contenido: oculto fuera de pantalla, visible solo con foco de teclado. */
+.skip-link {
+  position: absolute;
+  left: 8px;
+  top: -60px;
+  z-index: 30;
+  background: var(--tinta);
+  color: var(--papel);
+  font-family: var(--rotulo); font-weight: 700; font-size: 1.125rem;
+  padding: 10px 16px;
+  text-decoration: none;
+  transition: top .15s ease-out;
+}
+.skip-link:focus-visible,
+.skip-link:focus {
+  top: 8px;
+  outline: 3px solid var(--oro);
+  outline-offset: 2px;
+}
+
 h1, h2, h3 {
   font-family: var(--rotulo);
   font-stretch: condensed;
