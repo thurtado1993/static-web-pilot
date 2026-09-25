@@ -1,42 +1,66 @@
-<html>
+<!DOCTYPE html>
+<html lang="es">
 <head>
-<meta charset="utf-8">
-<title>Contacto</title>
-<link rel="stylesheet" href="css/style.css">
-<script src="js/main.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contacto, Forn Molla d'Or</title>
+  <meta name="description" content="Cómo llegar y llamar al Forn Molla d'Or, Plaça Major 3, Castellfort del Riu. Teléfono: 600 000 000.">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<div id="header">
-  <h1>FORN MOLLA D'OR</h1>
-  <div class="menu">
-    <a href="index.html">Inicio</a> |
-    <a href="productos.html">Productos</a> |
-    <a href="nosotros.html">Nosotros</a> |
-    <a href="contacto.html">Contacto</a>
-  </div>
-</div>
+  <header class="top">
+    <div class="wrap top-row">
+      <a class="mini-mark" href="index.html">Forn Molla d'Or</a>
+      <nav aria-label="Principal">
+        <ul class="nav">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="contacto.html" aria-current="page">Contacto</a></li>
+        </ul>
+      </nav>
+      <a class="top-call" href="tel:+34600000000">Llamar al 600 000 000</a>
+    </div>
+  </header>
 
-<div id="contenedor">
-  <h1>Contacto</h1>
+  <main>
 
-  <p class="gris">Estamos en la Plaça Major 3 de Castellfort del Riu. Llamanos al 600 000 000 o escribenos con el formulario.</p>
-  <p class="gris">Horario: lunes a sabado de 7:00 a 21:00, domingos cerrado.</p>
+    <section class="franja pagehead">
+      <div class="wrap">
+        <h1>Contacto</h1>
+        <address class="dir-grande">
+          Plaça Major 3<br>
+          Castellfort del Riu
+        </address>
+        <p>Estamos en la Plaça Major 3 de Castellfort del Riu. Llamanos al 600 000 000.</p>
+        <p class="nota">Horario: lunes a sabado de 7:00 a 21:00, domingos cerrado.</p>
+        <a class="top-call" href="tel:+34600000000">Llamar al 600 000 000</a>
+      </div>
+    </section>
 
-  <form action="#" method="post">
-    <input type="text" name="nombre" placeholder="Nombre"><br>
-    <input type="text" name="email" placeholder="Email"><br>
-    <input type="text" name="telefono" placeholder="Telefono"><br>
-    <textarea name="mensaje" placeholder="Que quieres encargar?"></textarea><br>
-    <div class="boton" onclick="enviar()">Enviar</div>
-  </form>
+    <section class="franja">
+      <div class="wrap">
+        <h2>Dónde estamos</h2>
+        <div class="mapa">
+          <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=1.0%2C41.0%2C1.01%2C41.01&amp;layer=mapnik" title="Mapa de la ubicación del Forn Molla d'Or" loading="lazy"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
 
-  <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=1.0%2C41.0%2C1.01%2C41.01&amp;layer=mapnik" width="900" height="400"></iframe>
-</div>
+  <footer class="pie">
+    <div class="wrap pie-in">
+      <p class="pie-marca">Forn Molla d'Or</p>
+      <address>
+        Plaça Major 3, Castellfort del Riu<br>
+        <a href="tel:+34600000000">600 000 000</a>
+      </address>
+      <p>Lunes a sábado, 7:00 – 20:00<br>Domingo, 8:00 – 14:00</p>
+      <p class="legal">[PENDIENTE: aviso legal, privacidad y cookies]</p>
+      <p class="copy">© 2019 Forn Molla d'Or - Todos los derechos reservados</p>
+    </div>
+  </footer>
 
-<div id="footer">
-  <font size="2">© 2019 Forn Molla d'Or - Todos los derechos reservados</font>
-</div>
-
+  <a class="barra-llamar" href="tel:+34600000000">Llamar al 600 000 000</a>
 </body>
 </html>
