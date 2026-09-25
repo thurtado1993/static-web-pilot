@@ -73,22 +73,26 @@ address { font-style: normal; }
 .mini-mark {
   font-family: var(--rotulo); font-stretch: condensed; font-weight: 700;
   font-size: 1.375rem; text-decoration: none; margin-right: auto;
+  display: inline-flex; align-items: center; min-height: 44px;
 }
-.nav { display: flex; gap: 4px 20px; list-style: none; margin: 0; padding: 0; }
+.nav { display: flex; gap: 4px 8px; list-style: none; margin: 0; padding: 0; }
 .nav a {
-  display: inline-block; padding: 10px 0; text-decoration: none;
+  display: inline-flex; align-items: center; min-height: 44px;
+  padding: 10px 12px; text-decoration: none;
   font-family: var(--rotulo); font-size: 1.125rem;
 }
 .nav a:hover { text-decoration: underline; }
 .nav a[aria-current="page"] { text-decoration: underline; text-decoration-thickness: 3px; }
-.top-call {
+.top-call, .boton-accion {
   font-family: var(--rotulo); font-weight: 700; font-size: 1.125rem;
   text-decoration: none; background: var(--tinta); color: var(--papel);
   padding: 10px 16px; min-height: 44px; display: inline-flex; align-items: center;
 }
-.top-call:focus-visible { outline-color: var(--tinta); }
+.top-call:focus-visible, .boton-accion:focus-visible { outline-color: var(--tinta); }
 @media (max-width: 560px) {
-  .top-call { display: none; }      /* en móvil la llamada está en la bolsa/cabecera de página y en la barra fija */
+  /* Solo la llamada de cabecera: en móvil ya está la bolsa/cabecera de página y la barra fija.
+     Los CTA de teléfono del cuerpo (.boton-accion) deben seguir visibles. */
+  .top .top-call { display: none; }
   .nav { width: 100%; justify-content: space-between; }
 }
 
@@ -218,6 +222,10 @@ address { font-style: normal; }
 .pie-in { display: grid; gap: 16px; }
 @media (min-width: 720px) { .pie-in { grid-template-columns: 1fr 1fr 1fr; } }
 .pie-marca { font-family: var(--rotulo); font-stretch: condensed; font-weight: 700; font-size: 2rem; line-height: 1; }
+.pie address a {
+  display: inline-flex; align-items: center; min-height: 44px;
+  padding: 4px 0;
+}
 .pie a:focus-visible { outline-color: var(--oro); }
 .legal { grid-column: 1 / -1; font-size: 1rem; margin: 16px 0 0; }
 .copy { grid-column: 1 / -1; font-size: .875rem; margin: 4px 0 0; }
